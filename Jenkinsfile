@@ -1,16 +1,15 @@
-pipeline{
-	agent any{
-		stages{
-			stage("Run Test"){
+pipeline {
+	agent any
+		stages {
+			stage('Run Test') {
 				steps{
 					sh "docker-compose up"
 				}
 			}
-			stage{
-				steps{
+			stage {
+				steps {
 					sh "docker-compose down"
 				}
 			}
 		}
-	}
 }
