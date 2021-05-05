@@ -21,7 +21,7 @@ services:
       - chrome
       - firefox
     environment:
-      - HUB_HOST=hub
+      - HUB_HOST=hub:4444
       - BROWSER=firefox
       - MODULE=search-module.xml
     volumes:
