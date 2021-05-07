@@ -6,7 +6,7 @@ pipeline {
 				sh "docker pull josserestrepo/selenium-docker"
 			}
 		}
-		stage("Start Grid") {
+		stage("Start FFCHR") {
 			steps{
 				sh "docker-compose up -d hub chrome firefox"
 			}
